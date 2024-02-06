@@ -7,5 +7,11 @@ public class kieuDuLieu {
 		double giaTien = 20.5;
 		boolean conSach = true;
 		char maKho = 'M';
+		
+		System.out.println("Tên sách: "+ tenSach);
+		System.out.println("Năm xuất bản: "+ namXuatBan);
+		System.out.println("Giá: "+ giaTien);
+		System.out.println("Còn sách: "+ conSach);
+		System.out.println("Mã kho: "+ maKho);
 	}
 }

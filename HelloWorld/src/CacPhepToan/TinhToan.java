@@ -21,7 +21,7 @@ public class TinhToan {
 		int hieu = a - b;
 		System.out.println("Hiệu a và b là: "+a+" - "+b+" = "+hieu);
 		
-		int thuong = a / b;
+		float thuong = (float)a / b;
 		System.out.println("Thương a và b là: "+a+" / "+b+" = "+thuong);
 		
 		int tich = a * b;

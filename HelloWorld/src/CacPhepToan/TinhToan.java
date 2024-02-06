@@ -17,5 +17,14 @@ public class TinhToan {
 		
 		int tong = a + b;
 		System.out.println("Tổng a và b là: "+a+" + "+b+" = "+tong);
+		
+		int hieu = a - b;
+		System.out.println("Hiệu a và b là: "+a+" - "+b+" = "+hieu);
+		
+		int thuong = a / b;
+		System.out.println("Thương a và b là: "+a+" / "+b+" = "+thuong);
+		
+		int tich = a * b;
+		System.out.println("Tích a và b là: "+a+" * "+b+" = "+tich);
 	}
 }

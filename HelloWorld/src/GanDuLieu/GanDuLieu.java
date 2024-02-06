@@ -1,5 +1,16 @@
 package GanDuLieu;
 
-public class GanDuLieu {
+import java.util.Scanner;
 
+public class GanDuLieu {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float a;
+		System.out.println("Nhập vào số a: ");
+		//Các phép gán
+		a = sc.nextFloat();
+		System.out.println("a = "+ a);
+		a+=3;
+		System.out.println('"');
+	}
 }

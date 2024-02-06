@@ -17,6 +17,7 @@ public class XinChao {
 		System.out.println("Kiên");
 		System.out.println("Lần đầu tiên học java, android");
 		System.out.println("Bắt đầu học java, android!");
+		System.out.println("Không hiển thị");
 	}
 
 }

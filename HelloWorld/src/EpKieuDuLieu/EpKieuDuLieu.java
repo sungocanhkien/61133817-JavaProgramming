@@ -29,6 +29,10 @@ public class EpKieuDuLieu {
 		System.out.println("g = "+ g);
 		System.out.println("h = "+ h);
 		
+		// Ép kiểu giữa biến nguyên thủy và đối tượng
+		int x = new Integer(32);
+		System.out.println("x = "+ x);
+		
 		
 	}
 }

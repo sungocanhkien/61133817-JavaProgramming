@@ -26,5 +26,8 @@ public class TinhToan {
 		
 		int tich = a * b;
 		System.out.println("Tích a và b là: "+a+" * "+b+" = "+tich);
+		
+		int soDu = a % b;
+		System.out.println("Tổng a và b là: "+a+" % "+b+" = "+soDu);
 	}
 }

@@ -15,24 +15,30 @@ public class PTBacII {
 		c = sc.nextDouble();
 		
 		delta = Math.pow(b, 2) - 4*a*c;
-		if(delta < 0) 
+		if(a == 0) {
+			System.out.println("a phải lớn hơn 0.");
+		}
+		else
 		{
-			// Tình huống delta < 0
-			System.out.println("Phương trình vô nghiệm.");
-		
+			if(delta < 0) 
+			{
+				// Tình huống delta < 0
+				System.out.println("Phương trình vô nghiệm.");
 			
-		}else if(delta == 0){
-			// Tình huống delta == 0
-			x1 = -b/(2*a);
-			System.out.println("Phương trình có nghiệm kép x1=x2="+x1);
-			
-		}else {
-			// Tình huống delta > 0
-			x1 = (-b - Math.sqrt(delta))/(2*a);
-			x2 = (-b - Math.sqrt(delta))/(2*a);
-			System.out.println("Phương trình có 2 nghiệm: ");
-			System.out.println("x1 = "+ x1);
-			System.out.println("x2 = "+ x2);
+				
+			}else if(delta == 0){
+				// Tình huống delta == 0
+				x1 = -b/(2*a);
+				System.out.println("Phương trình có nghiệm kép x1=x2="+x1);
+				
+			}else {
+				// Tình huống delta > 0
+				x1 = (-b - Math.sqrt(delta))/(2*a);
+				x2 = (-b - Math.sqrt(delta))/(2*a);
+				System.out.println("Phương trình có 2 nghiệm: ");
+				System.out.println("x1 = "+ x1);
+				System.out.println("x2 = "+ x2);
+			}
 		}
 	}
 }	

@@ -12,6 +12,7 @@ public class HinhTron {
 		// Tính chu vi
 		chuVi = 2*Math.PI*r;
 		System.out.println("Chu vi = " + chuVi);
+		System.out.println("Chu vi = " + Math.round(chuVi));
 		
 		// Tính diện tích
 		dienTich = Math.PI*Math.pow(r, 2);

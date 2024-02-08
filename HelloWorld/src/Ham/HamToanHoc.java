@@ -24,13 +24,13 @@ public class HamToanHoc {
 		System.out.println("ceil(a) = " + Math.ceil(a));
 		
 		// Hàm floor
-		System.out.println("floor(a) = " + Math.floor(a);
+		System.out.println("floor(a) = " + Math.floor(a));
 		
 		// Hàm căn bậc hai
 		System.out.println("sqrt(a) = " + Math.sqrt(a));
 		
-		
-	
+		// Hàm tính lũy thừa
+		System.out.println("a^b = " + Math.pow(a, b));
 		
 	}
 }

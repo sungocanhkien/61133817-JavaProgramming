@@ -11,7 +11,10 @@ public class BT_try_catch_finaly {
 			n = sc.nextInt();
 		} catch (Exception e) {
 			System.out.println("Dữ liệu nhập sai.");
+		} finally {
+			System.out.println("Finally!");
 		}
+		
 		System.out.println("Giá trị nhập là: "+ n);
 		System.out.println("Kết thúc chương trình.");
 	}

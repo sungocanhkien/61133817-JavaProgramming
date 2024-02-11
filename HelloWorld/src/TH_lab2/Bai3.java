@@ -17,6 +17,6 @@ public class Bai3 {
 		{
 			tien = 50*1000+(soDien-50)*1200;
 		}
-		System.out.println("Tiền điện phải trả là: "+ tien + "đồng");
+		System.out.println("Tiền điện phải trả là: "+ tien + " " + "đồng");
 	}
 }

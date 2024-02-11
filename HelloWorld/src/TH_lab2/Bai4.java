@@ -36,7 +36,7 @@ public class Bai4 {
 				break;
 			}
 			case 4: {
-				System.out.println("Kết thúc ");
+				System.out.println("Chương trình kết thúc ");
 				break;
 			}
 			default:

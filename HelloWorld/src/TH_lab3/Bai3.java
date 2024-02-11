@@ -16,7 +16,7 @@ public class Bai3 {
 			mang[i] = sc.nextInt();
 		}
 		
-		Arrays.sor(mang);
+		Arrays.sort(mang);
 		System.out.println("Mảng sau khi sắp xếp: ");
 		for(int num: mang)
 		{

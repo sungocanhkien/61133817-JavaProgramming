@@ -24,6 +24,13 @@ public class Bai3 {
 		}
 		System.out.println();
 		
+		int min = mang[0];
+		for(int i = 1; i < n; i++)
+		{
+			min = Math.min(min, mang[i]);
+		}
+		System.out.println("Phần tử nhỏ nhất trong mảng là: "+ min);
+		
 		int sum = 0;
 		int count = 0;
 		for(int i = 0; i< n; i++)

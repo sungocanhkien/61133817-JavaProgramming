@@ -18,9 +18,9 @@ public class Bai1 {
 		}
 		if(ok && N>1)
 		{
-			System.out.println(N + "là số nguyên tố.");
+			System.out.println(N + " là số nguyên tố.");
 		}else{
-			System.out.println(N + "không phải là số nguyên tố.");
+			System.out.println(N + " không phải là số nguyên tố.");
 		}
 	}
 }

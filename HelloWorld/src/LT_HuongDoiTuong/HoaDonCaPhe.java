@@ -16,4 +16,15 @@ public class HoaDonCaPhe {
 	{
 		return this.giaTien1Kg * this.khoiLuong;
 	}
+	
+	public boolean kiemTraKhoiLuongLonHon(double kl)
+	{
+//		if(this.khoiLuong > kl)
+//		{
+//			return true;
+//		}else {
+//			return false;
+//		}
+		return this.khoiLuong > kl;
+	}
 }

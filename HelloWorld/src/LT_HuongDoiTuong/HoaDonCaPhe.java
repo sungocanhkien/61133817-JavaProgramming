@@ -27,4 +27,9 @@ public class HoaDonCaPhe {
 //		}
 		return this.khoiLuong > kl;
 	}
+	
+	public boolean kiemTraTongTienLonHon500K()
+	{
+		return this.tinhTongTien() > 500000;
+	}
 }

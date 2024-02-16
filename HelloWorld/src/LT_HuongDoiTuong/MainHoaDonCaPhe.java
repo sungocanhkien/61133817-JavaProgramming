@@ -2,10 +2,11 @@ package LT_HuongDoiTuong;
 
 public class MainHoaDonCaPhe {
 	public static void main(String[] args) {
-		HoaDonCaPhe hd = new HoaDonCaPhe("Trung Nguyen", 100, 1.5);
+		HoaDonCaPhe hd = new HoaDonCaPhe("Trung Nguyen", 100000, 1.5);
 		System.out.println("Tong tien: " + hd.tinhTongTien());
 		
 		System.out.println("Kiem tra khoi luong > 2kg" + " " +hd.kiemTraKhoiLuongLonHon(2));
 		System.out.println("Kiem tra khoi luong > 1kg" + " " +hd.kiemTraKhoiLuongLonHon(1));
+		System.out.println("Kiem tra tong tien > 500k" + " " +hd.kiemTraTongTienLonHon500K());
 	}
 }

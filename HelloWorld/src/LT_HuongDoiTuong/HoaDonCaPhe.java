@@ -32,4 +32,14 @@ public class HoaDonCaPhe {
 	{
 		return this.tinhTongTien() > 500000;
 	}
+	
+	public double giamGia(double x)
+	{
+		if( this.tinhTongTien()>500000)
+		{
+			return (x/100)*this.tinhTongTien();
+		}else {
+			return 0;
+		}
+	}
 }

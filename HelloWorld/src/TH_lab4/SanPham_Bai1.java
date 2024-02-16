@@ -1,8 +1,8 @@
-package TH_lab4_Bai1;
+package TH_lab4;
 
 import java.util.Scanner;
 
-public class SanPham {
+public class SanPham_Bai1 {
 	private String tenSp;
 	private double donGia;
 	private double giamGia;

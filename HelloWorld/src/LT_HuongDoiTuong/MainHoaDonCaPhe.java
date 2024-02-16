@@ -6,5 +6,6 @@ public class MainHoaDonCaPhe {
 		System.out.println("Tong tien: " + hd.tinhTongTien());
 		
 		System.out.println("Kiem tra khoi luong > 2kg" + " " +hd.kiemTraKhoiLuongLonHon(2));
+		System.out.println("Kiem tra khoi luong > 1kg" + " " +hd.kiemTraKhoiLuongLonHon(1));
 	}
 }

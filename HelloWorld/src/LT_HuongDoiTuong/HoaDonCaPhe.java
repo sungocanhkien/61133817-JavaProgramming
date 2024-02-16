@@ -42,4 +42,9 @@ public class HoaDonCaPhe {
 			return 0;
 		}
 	}
+	
+	public double giaSauKhiGiam(double x)
+	{
+		return this.tinhTongTien()	- this.giamGia(x);
+	}
 }

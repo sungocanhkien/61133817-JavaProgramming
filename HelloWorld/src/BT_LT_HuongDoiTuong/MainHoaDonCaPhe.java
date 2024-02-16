@@ -1,4 +1,4 @@
-package LT_HuongDoiTuong;
+package BT_LT_HuongDoiTuong;
 
 public class MainHoaDonCaPhe {
 	public static void main(String[] args) {

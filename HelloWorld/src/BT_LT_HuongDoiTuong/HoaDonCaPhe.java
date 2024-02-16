@@ -1,4 +1,4 @@
-package LT_HuongDoiTuong;
+package BT_LT_HuongDoiTuong;
 
 public class HoaDonCaPhe {
 	private String tenLoaiCaPhe;

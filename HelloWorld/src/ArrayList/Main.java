@@ -35,6 +35,7 @@ public class Main {
 				float diemTrungBinh = sc.nextFloat();
 				
 				SinhVien sv = new SinhVien(maSinhVien, hoVaTen, namSinh, diemTrungBinh);
+				dssv.themSinhVien(sv);
 				
 			}else if(luaChon == 2)
 			{

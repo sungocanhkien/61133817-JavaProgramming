@@ -42,13 +42,13 @@ public class Main {
 				dssv.inDanhSachSinhVien();
 			}else if(luaChon == 3)
 			{
-				
+				System.out.println("Kiểm tra danh sách rỗng: "+ dssv.kiemTraDanhSachRong());
 			}else if(luaChon == 4)
 			{
-				
+				System.out.println("Số lượng sinh viên hiện tại: "+ dssv.laySoLuongSinhVien());
 			}else if(luaChon == 5)
 			{
-				
+				dssv.lamRongDanhSach();
 			}else if(luaChon == 6)
 			{
 				

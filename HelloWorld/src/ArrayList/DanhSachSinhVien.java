@@ -27,4 +27,17 @@ public class DanhSachSinhVien {
 			System.out.println(sinhVien);
 		}
 	}
+	
+	public boolean kiemTraDanhSachRong() {
+		return this.danhsach.isEmpty();
+	}
+	
+	public int laySoLuongSinhVien() {
+		return this.danhsach.size();
+	}
+	
+	public void lamRongDanhSach() {
+		this.danhsach.removeAll(danhsach);
+	}
 }
+

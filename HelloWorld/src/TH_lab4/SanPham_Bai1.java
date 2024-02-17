@@ -8,7 +8,7 @@ public class SanPham_Bai1 {
 	private double giamGia;
 	
 	public String getTenSp() {
-		return tenSp;
+		return this.tenSp;
 	}
 
 	public void setTenSp(String tenSp) {
@@ -16,7 +16,7 @@ public class SanPham_Bai1 {
 	}
 
 	public double getDonGia() {
-		return donGia;
+		return this.donGia;
 	}
 
 	public void setDonGia(double donGia) {
@@ -24,7 +24,7 @@ public class SanPham_Bai1 {
 	}
 
 	public double getGiamGia() {
-		return giamGia;
+		return this.giamGia;
 	}
 
 	public void setGiamGia(double giamGia) {

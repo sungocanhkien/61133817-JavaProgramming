@@ -7,7 +7,7 @@ public class SanPham_Bai1 {
 	private double donGia;
 	private double giamGia;
 	
-	public double getThueNhapKhau()
+	private double getThueNhapKhau()
 	{
 		return 0.1 * donGia;
 	}
@@ -30,4 +30,18 @@ public class SanPham_Bai1 {
 		System.out.println("Nhập giảm giá: ");
 		giamGia = sc.nextDouble();
 	}
+
+	public SanPham_Bai1(String tenSp, double donGia, double giamGia) 
+	{	
+		this.tenSp = tenSp;
+		this.donGia = donGia;
+		this.giamGia = giamGia;
+	}
+
+	public SanPham_Bai1(String tenSp, double donGia) {
+		this(tenSp , donGia, 0);
+		
+	}
+	
 }
+	

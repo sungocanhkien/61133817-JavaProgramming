@@ -40,8 +40,8 @@ public class SinhVien {
 		}
 		@Override
 		public String toString() {
-			return "SinhVien [maSinhVien=" + maSinhVien + ", hoVaten=" + hoVaten + ", namSinh=" + namSinh
-					+ ", diemTrungBinh=" + diemTrungBinh + "]";
+			return "SinhVien [Mã sinh viên = " + maSinhVien + ", Họ và tên = " + hoVaten + ", Năm sinh = " + namSinh
+					+ ", Điểm trung bình = " + diemTrungBinh + "]";
 		}
 		
 		

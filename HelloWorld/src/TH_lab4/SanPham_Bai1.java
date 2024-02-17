@@ -7,6 +7,30 @@ public class SanPham_Bai1 {
 	private double donGia;
 	private double giamGia;
 	
+	public String getTenSp() {
+		return tenSp;
+	}
+
+	public void setTenSp(String tenSp) {
+		this.tenSp = tenSp;
+	}
+
+	public double getDonGia() {
+		return donGia;
+	}
+
+	public void setDonGia(double donGia) {
+		this.donGia = donGia;
+	}
+
+	public double getGiamGia() {
+		return giamGia;
+	}
+
+	public void setGiamGia(double giamGia) {
+		this.giamGia = giamGia;
+	}
+
 	private double getThueNhapKhau()
 	{
 		return 0.1 * donGia;

@@ -21,6 +21,7 @@ public class Main {
 			+ "9. Xuất ra danh sách sinh viên có điểm từ cao đến thấp. \n" 
 			+ "0. Thoát chương trình.");
 			luaChon = sc.nextInt();
+			sc.nextLine();
 			if(luaChon ==1)
 			{
 				System.out.println("Nhập mã sinh viên: ");

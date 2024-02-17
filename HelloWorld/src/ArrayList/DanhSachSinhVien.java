@@ -1,6 +1,7 @@
 package ArrayList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class DanhSachSinhVien {
 	private ArrayList<SinhVien> danhsach;
@@ -20,4 +21,10 @@ public class DanhSachSinhVien {
 		this.danhsach.add(sv);
 	}
 	
+	public void inDanhSachSinhVien()
+	{
+		for (SinhVien sinhVien : danhsach) {
+			System.out.println(sinhVien);
+		}
+	}
 }

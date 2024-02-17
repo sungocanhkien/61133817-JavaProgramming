@@ -22,6 +22,7 @@ public class Main {
 			+ "0. Thoát chương trình.");
 			luaChon = sc.nextInt();
 			sc.nextLine();
+			
 			if(luaChon ==1)
 			{
 				System.out.println("Nhập mã sinh viên: ");
@@ -37,7 +38,7 @@ public class Main {
 				
 			}else if(luaChon == 2)
 			{
-				
+				dssv.inDanhSachSinhVien();
 			}else if(luaChon == 3)
 			{
 				

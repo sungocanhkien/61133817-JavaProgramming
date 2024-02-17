@@ -38,6 +38,11 @@ public class SinhVien {
 		public void setDiemTrungBinh(float diemTrungBinh) {
 			this.diemTrungBinh = diemTrungBinh;
 		}
-	
-	
+		@Override
+		public String toString() {
+			return "SinhVien [maSinhVien=" + maSinhVien + ", hoVaten=" + hoVaten + ", namSinh=" + namSinh
+					+ ", diemTrungBinh=" + diemTrungBinh + "]";
+		}
+		
+		
 }

@@ -64,7 +64,11 @@ public class Bai2 {
 				String tenCanXoa = sc.nextLine();
 				for(String ten: danhsach)
 				{
-					
+					if(ten.equals(tenCanXoa))
+					{
+						danhsach.remove(ten);
+						break;
+					}
 				}
 				break;
 			}

@@ -52,17 +52,29 @@ public class Bai3_Class_Main {
 				break;
 			}
 			case 3: {
-				
+				System.out.println("Nhập tên sản phẩm cần xóa: ");
+				String tenSPxoa = sc.nextLine();
+				danhSachSanPham.removeIf(sp -> sp.equals(tenSPxoa));
+				System.out.println("Đã xóa sản phẩm.");
+				break;
 			}
 			case 4: {
-				
+				double TongGia = 0;
+				for (Bai3_Class_SanPham sp : danhSachSanPham) {
+					TongGia += sp.gia;
+				}
+				double giaTrungBinh = TongGia / danhSachSanPham.size();
+				System.out.println("Giá trung bình của các sản phẩm: " + giaTrungBinh);
+				break;
 			}
 			case 0: {
-				
+				System.out.println("Bạn đã thoát chương trình");
+				break;
 			}
 			default:
-				
+				System.out.println("Lựa chọn không hợp lệ.");
+				break;
 			}
-		}while(luaChon != 5);
+		}while(luaChon != 0);
 	}
 }

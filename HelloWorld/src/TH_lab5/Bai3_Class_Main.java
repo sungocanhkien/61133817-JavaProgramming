@@ -18,13 +18,36 @@ public class Bai3_Class_Main {
 			System.out.println("4. Xuất giá trung bình của các sản phẩm.");
 			luaChon = sc.nextInt();
 			
-			switch (key) {
-			case value: {
+			switch (luaChon) {
+			case 1: {
+				System.out.println("Nhập số lượng sản phẩm: ");
+				int n = sc.nextInt();
+				sc.nextLine();
+				for(int i = 0; i<n; i++)
+				{
+					System.out.println("Nhập tên sản phẩm thứ " + (i + 1) + ": ");
+					String ten = sc.nextLine();
+					System.out.println("Nhập giá của sản phẩm thứ " + (i + 1) + ":");
+					double gia = sc.nextDouble();
+					sc.nextLine();
+					danhSachSanPham.add(new Bai3_Class_SanPham(ten, gia));
+				}
+				break;
+			}
+			case 2: {
 				
-				yield type;
+			}
+			case 3: {
+				
+			}
+			case 4: {
+				
+			}
+			case 0: {
+				
 			}
 			default:
-				w IllegalArgumentException("Unexpected value: " + key);
+				
 			}
 		}while(luaChon != 5);
 	}

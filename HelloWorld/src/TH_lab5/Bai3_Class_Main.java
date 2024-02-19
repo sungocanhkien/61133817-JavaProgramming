@@ -1,6 +1,8 @@
 package TH_lab5;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,7 +37,19 @@ public class Bai3_Class_Main {
 				break;
 			}
 			case 2: {
-				
+				Comparator<Bai3_Class_SanPham> comp = new Comparator<Bai3_Class_SanPham>() {
+					
+					@Override
+					public int compare(Bai3_Class_SanPham o1, Bai3_Class_SanPham o2) {
+						return 0;
+					}
+				};
+				Collections.sort(danhSachSanPham, comp);
+				System.out.println("Danh sách sản phẩm sau khi sắp xếp giảm dần theo giá:");
+				for (Bai3_Class_SanPham sp : danhSachSanPham) {
+					System.out.println("Tên: " + sp.ten + ", Giá: " + sp.gia);
+				}
+				break;
 			}
 			case 3: {
 				

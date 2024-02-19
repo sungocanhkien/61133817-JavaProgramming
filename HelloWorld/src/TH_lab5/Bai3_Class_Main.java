@@ -18,6 +18,7 @@ public class Bai3_Class_Main {
 			System.out.println("2. Sắp xếp giảm dần theo giá và xuất ra màn hình.");
 			System.out.println("3. Tìm và xóa sản phẩm theo tên nhập từ bàn phím.");
 			System.out.println("4. Xuất giá trung bình của các sản phẩm.");
+			System.out.println("0. Thoát chương trình.");
 			luaChon = sc.nextInt();
 			
 			switch (luaChon) {

@@ -27,7 +27,9 @@ public class Bai2 {
 				sc.nextLine();
 				String hoTen = sc.nextLine();
 				danhsach.add(hoTen);
+				break;
 			}
+			
 			case 2: {
 				System.out.println("Danh sách vừa nhập:");
 				sc.nextLine();
@@ -35,6 +37,7 @@ public class Bai2 {
 				{
 					System.out.println(ten);
 				}
+				break;
 			}
 			case 3: {
 				System.out.println("Danh sách ngẫu nhiên: ");
@@ -43,18 +46,35 @@ public class Bai2 {
 				{
 					System.out.println(ten);
 				}
+				break;
 			}
 			case 4: {
-				System.out.println("");
+				System.out.println("Sắp xếp giảm dần và xuất danh sách:");
+				Collections.sort(danhsach);
+				Collections.reverse(danhsach);
+				for(String ten: danhsach)
+				{
+					System.out.println(ten);
+				}
+				break;
 			}
 			case 5: {
-				System.out.println("");
+				System.out.println("Nhập tên cần xóa:");
+				sc.nextLine();
+				String tenCanXoa = sc.nextLine();
+				for(String ten: danhsach)
+				{
+					
+				}
+				break;
 			}
 			case 6: {
-				System.out.println("");
+				System.out.println("Kết thúc chương trình.");
+				break;
 			}
 			default:
-				
+				System.out.println("Lựa chọn không hợp lệ.");
+				break;
 			}
 			
 		}while(luaChon != 6);

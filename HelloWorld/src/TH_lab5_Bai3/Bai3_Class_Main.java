@@ -49,7 +49,7 @@ public class Bai3_Class_Main {
 				Collections.sort(danhSachSanPham, comp);
 				System.out.println("Danh sách sản phẩm sau khi sắp xếp giảm dần theo giá:");
 				for (Bai3_Class_SanPham sp : danhSachSanPham) {
-					System.out.println("Tên: " + sp.ten + ", Giá: " + sp.gia);
+					System.out.println("Tên sản phẩm: " + sp.ten + ", Giá: " + sp.gia);
 				}
 				break;
 			}

@@ -43,9 +43,11 @@ public class Bai3_Class_Main {
 					
 					@Override
 					public int compare(Bai3_Class_SanPham o1, Bai3_Class_SanPham o2) {
-						return 0;
+						// TODO Auto-generated method stub
+						return o1.gia.compareTo(o2.gia);
 					}
 				};
+					
 				Collections.sort(danhSachSanPham, comp);
 				System.out.println("Danh sách sản phẩm sau khi sắp xếp giảm dần theo giá:");
 				for (Bai3_Class_SanPham sp : danhSachSanPham) {

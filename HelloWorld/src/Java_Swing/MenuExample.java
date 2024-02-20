@@ -17,5 +17,23 @@ public class MenuExample {
         fileMenu.add(openItem); // Thêm mục "Open" vào menu "File"
         fileMenu.add(saveItem); // Thêm mục "Save" vào menu "File"
         fileMenu.add(exitItem); // Thêm mục "Exit" vào menu "File"
+        
+        fileMenu.add(newItem); // Thêm mục "New" vào menu "File"
+        fileMenu.add(openItem); // Thêm mục "Open" vào menu "File"
+        fileMenu.add(saveItem); // Thêm mục "Save" vào menu "File"
+        fileMenu.add(exitItem); // Thêm mục "Exit" vào menu "File"
+        
+        exitItem.addActionListener(new ActionListener() { // Thêm sự kiện ActionListener cho mục "Exit" để thoát chương trình
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0); // Thoát chương trình khi mục "Exit" được nhấp
+            }
+        });
+        
+        menuBar.add(fileMenu); // Thêm menu "File" vào menu bar
+        frame.setJMenuBar(menuBar); // Đặt menu bar vào cửa sổ JFrame
+        
+        frame.setSize(300, 200); // Đặt kích thước của cửa sổ
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Đặt hành động mặc định khi đóng cửa sổ
+        frame.setVisible(true); // Hiển thị cửa sổ
 	}
 }

@@ -44,7 +44,7 @@ public class Bai3_Class_Main {
 					@Override
 					public int compare(Bai3_Class_SanPham o1, Bai3_Class_SanPham o2) {
 						// TODO Auto-generated method stub
-						return o1.gia.compareTo(o2.gia);
+						return 0;
 					}
 				};
 					

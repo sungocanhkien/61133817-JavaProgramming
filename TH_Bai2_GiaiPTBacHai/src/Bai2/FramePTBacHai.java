@@ -86,11 +86,11 @@ public class FramePTBacHai extends JFrame {
 		textc.setBounds(131, 131, 139, 19);
 		contentPane.add(textc);
 		
-		JButton btnNewButton = new JButton("Giải PT");
-		btnNewButton.setBackground(new Color(128, 255, 255));
-		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		btnNewButton.setBounds(357, 52, 97, 23);
-		contentPane.add(btnNewButton);
+		JButton btnGPT = new JButton("Giải PT");
+		btnGPT.setBackground(new Color(128, 255, 255));
+		btnGPT.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		btnGPT.setBounds(357, 52, 97, 23);
+		contentPane.add(btnGPT);
 		
 		JButton btnReset = new JButton("Reset");
 		btnReset.setBackground(new Color(255, 255, 128));
@@ -98,20 +98,20 @@ public class FramePTBacHai extends JFrame {
 		btnReset.setBounds(357, 92, 97, 23);
 		contentPane.add(btnReset);
 		
-		JLabel lblNewLabel_1 = new JLabel("Delta:");
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		lblNewLabel_1.setBounds(44, 173, 52, 28);
-		contentPane.add(lblNewLabel_1);
+		JLabel txtDelta = new JLabel("Delta:");
+		txtDelta.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		txtDelta.setBounds(44, 173, 52, 28);
+		contentPane.add(txtDelta);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("x1:");
-		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		lblNewLabel_1_1.setBounds(44, 211, 52, 28);
-		contentPane.add(lblNewLabel_1_1);
+		JLabel txtx1 = new JLabel("x1:");
+		txtx1.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+		txtx1.setBounds(44, 211, 52, 28);
+		contentPane.add(txtx1);
 		
-		JLabel lblNewLabel_1_2 = new JLabel("x2:");
-		lblNewLabel_1_2.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		lblNewLabel_1_2.setBounds(44, 249, 52, 28);
-		contentPane.add(lblNewLabel_1_2);
+		JLabel txtx2 = new JLabel("x2:");
+		txtx2.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+		txtx2.setBounds(44, 249, 52, 28);
+		contentPane.add(txtx2);
 	}
 
 }

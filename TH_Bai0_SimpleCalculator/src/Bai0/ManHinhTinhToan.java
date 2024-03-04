@@ -71,11 +71,23 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(txtB);
 		
 		JButton btnCong = new JButton("Cộng");
+		btnCong.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Xử lý cộng
+				HamXuLyCong();
+			}
+		});
 		btnCong.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		btnCong.setBounds(81, 186, 85, 21);
 		contentPane.add(btnCong);
 		
 		JButton btnTru = new JButton("Trừ");
+		btnTru.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Xử lý trừ
+				HamXuLyTru();
+			}
+		});
 		btnTru.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		btnTru.setBounds(194, 187, 85, 21);
 		contentPane.add(btnTru);
@@ -104,5 +116,12 @@ public class ManHinhTinhToan extends JFrame {
 		txtKetQua.setColumns(10);
 		txtKetQua.setBounds(183, 262, 212, 19);
 		contentPane.add(txtKetQua);
+	}
+	void HamXuLyCong() {
+		
+	}
+	
+	void HamXuLyTru() {
+		
 	}
 }

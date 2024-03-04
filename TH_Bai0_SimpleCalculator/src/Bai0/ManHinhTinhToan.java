@@ -100,6 +100,7 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(lblKtQuTnh);
 		
 		txtKetQua = new JTextField();
+		txtKetQua.setEditable(false);
 		txtKetQua.setColumns(10);
 		txtKetQua.setBounds(183, 262, 212, 19);
 		contentPane.add(txtKetQua);

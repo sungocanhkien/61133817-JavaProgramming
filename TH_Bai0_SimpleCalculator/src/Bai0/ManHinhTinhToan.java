@@ -43,7 +43,7 @@ public class ManHinhTinhToan extends JFrame {
 		setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		setTitle("Chương Trình Tính Toán");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 820, 508);
+		setBounds(100, 100, 604, 381);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -101,7 +101,7 @@ public class ManHinhTinhToan extends JFrame {
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(167, 262, 212, 19);
+		textField_2.setBounds(183, 262, 212, 19);
 		contentPane.add(textField_2);
 	}
 }

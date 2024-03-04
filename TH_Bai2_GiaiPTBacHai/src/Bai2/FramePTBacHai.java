@@ -161,7 +161,7 @@ public class FramePTBacHai extends JFrame {
 		
 		double delta = b*b-4*a*c;
 		
-		textDelta.setText("delta: " + delta);
+		textDelta.setText(String.valueOf(delta));
 	}
 
 }

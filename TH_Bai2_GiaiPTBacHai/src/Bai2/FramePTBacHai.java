@@ -153,15 +153,18 @@ public class FramePTBacHai extends JFrame {
 		texta.setText("");
 		textb.setText("");
 		textc.setText("");
+		textDelta.setText("");
+		textX1.setText("");
+		textX2.setText("");
 	}
 	void HamGPT() {
-		double a = Double.parseDouble(texta.getText());
-		double b = Double.parseDouble(texta.getText());
-		double c = Double.parseDouble(texta.getText());
-		
-		double delta = (b*b)-(4*a*c);
-		
-		textDelta.setText(String.valueOf(delta));
+	    double a = Double.parseDouble(texta.getText());
+	    double b = Double.parseDouble(textb.getText());  
+	    double c = Double.parseDouble(textc.getText());  
+
+	    double delta = (b * b) - (4 * a * c);
+
+	    textDelta.setText(String.valueOf(delta));
 	}
 
 }

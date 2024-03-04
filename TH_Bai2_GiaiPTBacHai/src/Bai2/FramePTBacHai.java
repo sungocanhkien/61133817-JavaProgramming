@@ -50,7 +50,7 @@ public class FramePTBacHai extends JFrame {
 		setFont(new Font("Times New Roman", Font.BOLD, 16));
 		setTitle("GIẢI PHƯƠNG TRÌNH BẬC HAI");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 516, 352);
+		setBounds(100, 100, 679, 352);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -131,7 +131,7 @@ public class FramePTBacHai extends JFrame {
 		textDelta = new JTextField();
 		textDelta.setEditable(false);
 		textDelta.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		textDelta.setBounds(106, 179, 165, 19);
+		textDelta.setBounds(106, 179, 466, 19);
 		contentPane.add(textDelta);
 		textDelta.setColumns(10);
 		
@@ -139,14 +139,14 @@ public class FramePTBacHai extends JFrame {
 		textX1.setEditable(false);
 		textX1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		textX1.setColumns(10);
-		textX1.setBounds(105, 218, 165, 19);
+		textX1.setBounds(105, 218, 467, 19);
 		contentPane.add(textX1);
 		
 		textX2 = new JTextField();
 		textX2.setEditable(false);
 		textX2.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		textX2.setColumns(10);
-		textX2.setBounds(106, 256, 165, 19);
+		textX2.setBounds(106, 256, 466, 19);
 		contentPane.add(textX2);
 	}
 	void HamReset() {
@@ -166,11 +166,11 @@ public class FramePTBacHai extends JFrame {
 	    textDelta.setText(String.valueOf(delta));
 	    
 	    if(delta<0) {
-	    	textDelta.setText(String.valueOf(delta) + "< 0 => phương trình vô nghiệm.");
+	    	textDelta.setText(delta + "< 0 => phương trình vô nghiệm.");
 	    	textX1.setText(String.valueOf(textX1 + "Vô nghiệm"));
 	    	textX2.setText(String.valueOf(textX2 + "Vô nghiệm"));
 	    }else if(delta == 0) {
-	    	textDelta.setText(String.valueOf(delta) + " => phương trình có nghiệm.");
+	    	textDelta.setText(delta + " => phương trình có nghiệm.");
 	    	
 	    	double x1 = (-b+Math.sqrt(delta)/(2*a));
 	    	double x2 = (-b-Math.sqrt(delta)/(2*a));
@@ -178,7 +178,7 @@ public class FramePTBacHai extends JFrame {
 	    	textX1.setText(String.valueOf(textX1));
 	    	textX2.setText(String.valueOf(textX2));
 	    }else{
-	    	textDelta.setText(String.valueOf(delta) + ">0 => phương trình có 2 nghiệm phân biệt.");
+	    	textDelta.setText(delta + ">0 => phương trình có 2 nghiệm phân biệt.");
 	    	
 	    	double x1 = (-b+Math.sqrt(delta)/(2*a));
 	    	double x2 = (-b-Math.sqrt(delta)/(2*a));

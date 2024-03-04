@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Font;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -95,6 +96,8 @@ public class LoginJFrame extends JFrame {
 			this.setVisible(false);
 		}else {
 			// Báo lỗi
+			JOptionPane hopThoai = new JOptionPane();	
+			hopThoai.showMessageDialog(this, "Đăng nhập thất bại");
 		}
 	}
 

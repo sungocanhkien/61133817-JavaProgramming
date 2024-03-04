@@ -12,6 +12,8 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class FramePTBacHai extends JFrame {
 
@@ -93,6 +95,11 @@ public class FramePTBacHai extends JFrame {
 		contentPane.add(btnGPT);
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HamReset();
+			}
+		});
 		btnReset.setBackground(new Color(255, 255, 128));
 		btnReset.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		btnReset.setBounds(357, 92, 97, 23);
@@ -112,6 +119,11 @@ public class FramePTBacHai extends JFrame {
 		txtx2.setFont(new Font("Times New Roman", Font.PLAIN, 17));
 		txtx2.setBounds(44, 249, 52, 28);
 		contentPane.add(txtx2);
+	}
+	void HamReset() {
+		texta.setText("");
+		textb.setText("");
+		textc.setText("");
 	}
 
 }

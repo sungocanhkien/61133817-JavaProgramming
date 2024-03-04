@@ -8,13 +8,16 @@ import javax.swing.border.EmptyBorder;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class LoginJFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField textDangNhap;
+	private JTextField textMatKhau;
 
 	/**
 	 * Launch the application.
@@ -39,7 +42,7 @@ public class LoginJFrame extends JFrame {
 		setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		setTitle("ĐĂNG NHẬP HỆ THỐNG");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 222);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -56,17 +59,43 @@ public class LoginJFrame extends JFrame {
 		lblMtKhu.setBounds(37, 76, 106, 31);
 		contentPane.add(lblMtKhu);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		textField.setBounds(135, 48, 167, 19);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		textDangNhap = new JTextField();
+		textDangNhap.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		textDangNhap.setBounds(135, 48, 167, 19);
+		contentPane.add(textDangNhap);
+		textDangNhap.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		textField_1.setColumns(10);
-		textField_1.setBounds(135, 82, 167, 19);
-		contentPane.add(textField_1);
+		textMatKhau = new JTextField();
+		textMatKhau.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		textMatKhau.setColumns(10);
+		textMatKhau.setBounds(135, 82, 167, 19);
+		contentPane.add(textMatKhau);
+		
+		JButton btnDangNhap = new JButton("ĐĂNG NHẬP");
+		btnDangNhap.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				XuLyDangNhap();
+			}
+		});
+		btnDangNhap.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		btnDangNhap.setBounds(153, 125, 125, 31);
+		contentPane.add(btnDangNhap);
+	}
+	void XuLyDangNhap() {
+		//Lấy về tên DN và mật khẩu
+		String strTen = textDangNhap.getText();
+		String strMK = textMatKhau.getText();
+		//Xử lý
+		if(strTen.equals("63CNTT") && strMK.equals("123"))
+		{
+			//Hiện trang chủ
+			HomeFrame homePage = new HomeFrame();
+			homePage.setVisible(true);
+			// Ẩn from đăng nhập
+			this.setVisible(false);
+		}else {
+			// Báo lỗi
+		}
 	}
 
 }

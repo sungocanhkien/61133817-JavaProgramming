@@ -93,6 +93,11 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnTru);
 		
 		JButton btnNhan = new JButton("Nhân");
+		btnNhan.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HamXuLyNhan();
+			}
+		});
 		btnNhan.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		btnNhan.setBounds(304, 187, 85, 21);
 		contentPane.add(btnNhan);
@@ -100,6 +105,7 @@ public class ManHinhTinhToan extends JFrame {
 		JButton btnChia = new JButton("Chia");
 		btnChia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				HamXuLyChia();
 			}
 		});
 		btnChia.setFont(new Font("Times New Roman", Font.PLAIN, 16));
@@ -141,5 +147,30 @@ public class ManHinhTinhToan extends JFrame {
 		double tru = soA - soB;
 		// Đưa ra hiển thị lên điều khiển
 		txtKetQua.setText(String.valueOf(tru));	
+	}
+	
+	void HamXuLyNhan() {
+		//Lấy dữ liệu từ điều khiển
+		String str_soA = txtA.getText();
+		String str_soB = txtB.getText();
+		//Chuyển kiểu dữ liệu biến
+		double soA = Double.parseDouble(str_soA);
+		double soB = Double.parseDouble(str_soB);
+		// Tính toán
+		double nhan = soA * soB;
+		// Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(nhan));	
+	}
+	void HamXuLyChia() {
+		//Lấy dữ liệu từ điều khiển
+		String str_soA = txtA.getText();
+		String str_soB = txtB.getText();
+		//Chuyển kiểu dữ liệu biến
+		double soA = Double.parseDouble(str_soA);
+		double soB = Double.parseDouble(str_soB);
+		// Tính toán
+		double chia = soA / soB;
+		// Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(chia));	
 	}
 }

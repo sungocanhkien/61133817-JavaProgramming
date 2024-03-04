@@ -16,9 +16,9 @@ public class ManHinhTinhToan extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField txtA;
+	private JTextField txtB;
+	private JTextField txtKetQua;
 
 	/**
 	 * Launch the application.
@@ -60,30 +60,30 @@ public class ManHinhTinhToan extends JFrame {
 		lblNhpSTh.setBounds(44, 101, 143, 25);
 		contentPane.add(lblNhpSTh);
 		
-		textField = new JTextField();
-		textField.setBounds(183, 49, 212, 19);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtA = new JTextField();
+		txtA.setBounds(183, 49, 212, 19);
+		contentPane.add(txtA);
+		txtA.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(183, 105, 212, 19);
-		contentPane.add(textField_1);
+		txtB = new JTextField();
+		txtB.setColumns(10);
+		txtB.setBounds(183, 105, 212, 19);
+		contentPane.add(txtB);
 		
-		JButton btnNewButton = new JButton("Cộng");
-		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		btnNewButton.setBounds(81, 186, 85, 21);
-		contentPane.add(btnNewButton);
+		JButton btnCong = new JButton("Cộng");
+		btnCong.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		btnCong.setBounds(81, 186, 85, 21);
+		contentPane.add(btnCong);
 		
-		JButton btnTr = new JButton("Trừ");
-		btnTr.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		btnTr.setBounds(194, 187, 85, 21);
-		contentPane.add(btnTr);
+		JButton btnTru = new JButton("Trừ");
+		btnTru.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		btnTru.setBounds(194, 187, 85, 21);
+		contentPane.add(btnTru);
 		
-		JButton btnNhn = new JButton("Nhân");
-		btnNhn.setFont(new Font("Times New Roman", Font.PLAIN, 16));
-		btnNhn.setBounds(304, 187, 85, 21);
-		contentPane.add(btnNhn);
+		JButton btnNhan = new JButton("Nhân");
+		btnNhan.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		btnNhan.setBounds(304, 187, 85, 21);
+		contentPane.add(btnNhan);
 		
 		JButton btnChia = new JButton("Chia");
 		btnChia.addActionListener(new ActionListener() {
@@ -99,9 +99,9 @@ public class ManHinhTinhToan extends JFrame {
 		lblKtQuTnh.setBounds(44, 258, 143, 25);
 		contentPane.add(lblKtQuTnh);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(183, 262, 212, 19);
-		contentPane.add(textField_2);
+		txtKetQua = new JTextField();
+		txtKetQua.setColumns(10);
+		txtKetQua.setBounds(183, 262, 212, 19);
+		contentPane.add(txtKetQua);
 	}
 }

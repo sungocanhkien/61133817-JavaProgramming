@@ -96,6 +96,10 @@ public class LoginJFrame extends JFrame {
 			this.setVisible(false);
 		}else {
 			// Báo lỗi
+			//Xóa dữ liệu nhập
+			textDangNhap.setText("");
+			textMatKhau.setText("");
+			//Hiện thông báo.
 			JOptionPane hopThoai = new JOptionPane();	
 			hopThoai.showMessageDialog(this, "Đăng nhập thất bại");
 		}

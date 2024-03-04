@@ -22,6 +22,9 @@ public class FramePTBacHai extends JFrame {
 	private JTextField texta;
 	private JTextField textb;
 	private JTextField textc;
+	private JTextField textDelta;
+	private JTextField textX1;
+	private JTextField textX2;
 
 	/**
 	 * Launch the application.
@@ -56,17 +59,17 @@ public class FramePTBacHai extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Nhập số a:");
-		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		lblNewLabel.setBounds(44, 49, 77, 28);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNhpSB = new JLabel("Nhập số b:");
-		lblNhpSB.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblNhpSB.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		lblNhpSB.setBounds(44, 87, 77, 28);
 		contentPane.add(lblNhpSB);
 		
 		JLabel lblCnhpSA = new JLabel("Nhập số c:");
-		lblCnhpSA.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblCnhpSA.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		lblCnhpSA.setBounds(44, 125, 77, 28);
 		contentPane.add(lblCnhpSA);
 		
@@ -89,6 +92,11 @@ public class FramePTBacHai extends JFrame {
 		contentPane.add(textc);
 		
 		JButton btnGPT = new JButton("Giải PT");
+		btnGPT.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HamGPT();
+			}
+		});
 		btnGPT.setBackground(new Color(128, 255, 255));
 		btnGPT.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		btnGPT.setBounds(357, 52, 97, 23);
@@ -119,11 +127,41 @@ public class FramePTBacHai extends JFrame {
 		txtx2.setFont(new Font("Times New Roman", Font.PLAIN, 17));
 		txtx2.setBounds(44, 249, 52, 28);
 		contentPane.add(txtx2);
+		
+		textDelta = new JTextField();
+		textDelta.setEditable(false);
+		textDelta.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		textDelta.setBounds(106, 179, 165, 19);
+		contentPane.add(textDelta);
+		textDelta.setColumns(10);
+		
+		textX1 = new JTextField();
+		textX1.setEditable(false);
+		textX1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		textX1.setColumns(10);
+		textX1.setBounds(105, 218, 165, 19);
+		contentPane.add(textX1);
+		
+		textX2 = new JTextField();
+		textX2.setEditable(false);
+		textX2.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		textX2.setColumns(10);
+		textX2.setBounds(106, 256, 165, 19);
+		contentPane.add(textX2);
 	}
 	void HamReset() {
 		texta.setText("");
 		textb.setText("");
 		textc.setText("");
+	}
+	void HamGPT() {
+		double a = Double.parseDouble(texta.getText());
+		double b = Double.parseDouble(texta.getText());
+		double c = Double.parseDouble(texta.getText());
+		
+		double delta = b*b-4*a*c;
+		
+		textDelta.setText("delta: " + delta);
 	}
 
 }

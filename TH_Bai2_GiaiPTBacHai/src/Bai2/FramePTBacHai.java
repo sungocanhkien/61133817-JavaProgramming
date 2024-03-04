@@ -50,7 +50,7 @@ public class FramePTBacHai extends JFrame {
 		setFont(new Font("Times New Roman", Font.BOLD, 16));
 		setTitle("GIẢI PHƯƠNG TRÌNH BẬC HAI");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 692, 352);
+		setBounds(100, 100, 516, 352);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -159,7 +159,7 @@ public class FramePTBacHai extends JFrame {
 		double b = Double.parseDouble(texta.getText());
 		double c = Double.parseDouble(texta.getText());
 		
-		double delta = b*b-4*a*c;
+		double delta = (b*b)-(4*a*c);
 		
 		textDelta.setText(String.valueOf(delta));
 	}

@@ -166,7 +166,7 @@ public class FramePTBacHai extends JFrame {
 	    textDelta.setText(String.valueOf(delta));
 	    
 	    if(delta<0) {
-	    	textDelta.setText(delta + "< 0 => phương trình vô nghiệm.");
+	    	textDelta.setText(delta + " < 0 => phương trình vô nghiệm.");
 	    	textX1.setText(String.valueOf(textX1 + "Vô nghiệm"));
 	    	textX2.setText(String.valueOf(textX2 + "Vô nghiệm"));
 	    }else if(delta == 0) {
@@ -175,16 +175,16 @@ public class FramePTBacHai extends JFrame {
 	    	double x1 = (-b+Math.sqrt(delta)/(2*a));
 	    	double x2 = (-b-Math.sqrt(delta)/(2*a));
 	    	
-	    	textX1.setText(String.valueOf(textX1));
-	    	textX2.setText(String.valueOf(textX2));
+	    	textX1.setText(String.valueOf(x1));
+	    	textX2.setText(String.valueOf(x2));
 	    }else{
-	    	textDelta.setText(delta + ">0 => phương trình có 2 nghiệm phân biệt.");
+	    	textDelta.setText(delta + " >0 => phương trình có 2 nghiệm phân biệt.");
 	    	
 	    	double x1 = (-b+Math.sqrt(delta)/(2*a));
 	    	double x2 = (-b-Math.sqrt(delta)/(2*a));
 	    	
-	    	textX1.setText(String.valueOf(textX1));
-	    	textX2.setText(String.valueOf(textX2));
+	    	textX1.setText(String.valueOf(x1));
+	    	textX2.setText(String.valueOf(x2));
 	    }
 	}
 }

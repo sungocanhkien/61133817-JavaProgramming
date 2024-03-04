@@ -118,7 +118,16 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(txtKetQua);
 	}
 	void HamXuLyCong() {
-		
+		//Lấy dữ liệu từ điều khiển
+		String str_soA = txtA.getText();
+		String str_soB = txtB.getText();
+		//Chuyển kiểu dữ liệu biến
+		double soA = Double.parseDouble(str_soA);
+		double soB = Double.parseDouble(str_soB);
+		// Tính toán
+		double tong = soA + soB;
+		// Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(tong));
 	}
 	
 	void HamXuLyTru() {

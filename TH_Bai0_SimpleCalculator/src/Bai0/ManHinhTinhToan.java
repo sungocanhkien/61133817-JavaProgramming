@@ -47,5 +47,10 @@ public class ManHinhTinhToan extends JFrame {
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		lblNewLabel.setBounds(44, 45, 143, 25);
 		contentPane.add(lblNewLabel);
+		
+		JLabel lblNhpSTh = new JLabel("Nhập số thứ hai (b):");
+		lblNhpSTh.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblNhpSTh.setBounds(44, 101, 143, 25);
+		contentPane.add(lblNhpSTh);
 	}
 }

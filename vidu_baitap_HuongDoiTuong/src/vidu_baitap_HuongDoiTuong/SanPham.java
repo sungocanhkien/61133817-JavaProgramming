@@ -5,7 +5,7 @@ public class SanPham {
 	String tenSP;
 	String loaiSP;
 	String anhSP;
-	public SanPham(int maSP, String tenSP, String loaiSP, String anhSP) {
+	public SanPham() {
 		super();
 		this.maSP = maSP;
 		this.tenSP = tenSP;

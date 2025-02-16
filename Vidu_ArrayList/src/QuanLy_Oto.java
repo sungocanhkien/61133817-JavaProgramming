@@ -8,7 +8,12 @@ public class QuanLy_Oto {
 		//Thêm các đối tượng ô tô vào danh sách
 		DS_Oto.add(new DoiTuong_Oto(0, "Toyota", "Cam", 2022));
 		DS_Oto.add(new DoiTuong_Oto(1, "Honda", "Đỏ", 2023));
-		DS_
+		DS_Oto.add(new DoiTuong_Oto(2, "Ford", "Xanh", 2024));
+		
+		//Duyệt danh sách và hiển thị thông tin từng ô tô
+		for (DoiTuong_Oto oto: DS_Oto) {
+			System.out.println(oto);
+		}
 
 	}
 

@@ -12,8 +12,9 @@ public class TheTich {
 		double theTich = Math.pow(canh, 3);
 		
 		//Xuất kết quả
-		System.out.println("Thể tích khối lập phương là: ");
-		
+		System.out.println("Thể tích khối lập phương là: " + theTich);
+		//Đóng Scanner
+		scanner.close();
 	}
 
 }

@@ -46,8 +46,10 @@ public class DoiTuong_Oto {
 	//Phương thức toString
 	@Override
 	public String toString() {
-		return "DoiTuong_Oto [maOto=" + maOto + ", tenOto=" + tenOto + ", mauSacOto=" + mauSacOto + ", namSanXuatOto="
-				+ namSanXuatOto + "]";
+		return "DoiTuong_Oto [maOto=" + maOto + '\n' +
+				", tenOto=" + tenOto + '\n' +
+				", mauSacOto=" + mauSacOto + '\n' +
+				", namSanXuatOto="+ namSanXuatOto + "]";
 	}
 	
 	

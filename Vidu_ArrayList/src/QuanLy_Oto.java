@@ -12,7 +12,7 @@ public class QuanLy_Oto {
 		
 		//Duyệt danh sách và hiển thị thông tin từng ô tô
 		for (DoiTuong_Oto oto: DS_Oto) {
-			System.out.println(oto);
+			System.out.println(oto.toString());
 		}
 
 	}

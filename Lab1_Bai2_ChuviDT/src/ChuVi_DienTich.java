@@ -16,6 +16,15 @@ public class ChuVi_DienTich {
 		double chuvi = (dai + rong);
 		double dientich = dai * rong;
 		double canhnho = Math.min(dai, rong);
+		
+		//Xuất kết quả ra màn hình 
+		System.out.printf("Chu vi: %f\n", chuvi);
+		System.out.printf("Diện tích: %f\n", dientich);
+		System.out.printf("Cạnh nhỏ: %f\n", canhnho);
+		
+		//Đóng scanner
+		scanner.close();
+		
 	}
 
 }

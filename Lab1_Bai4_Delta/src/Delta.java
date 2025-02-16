@@ -16,7 +16,12 @@ public class Delta {
 		System.out.print("Nhập hệ số c: ");
 		double c = scanner.nextDouble();
 		
-		//Tính
+		//Tính delta
+		double delta = Math.pow(b,2)-4*a*c;
+		
+		//Tính căn delta
+		double sqrtDelta = Math.sqrt(delta);
+		
 		
 
 	}

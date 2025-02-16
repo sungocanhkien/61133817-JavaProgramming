@@ -25,8 +25,7 @@ public class DTB {
 		System.out.printf("%s %f điểm\n", hoTen, diemTB);
 		
 		//Đóng Scanner
-		
-
+		scanner.close();
 	}
 
 }

@@ -13,7 +13,7 @@ public class ChuVi_DienTich {
 		double rong = scanner.nextDouble();
 		
 		//Tính chu vi, diện tích cạnh nhỏ 
-		double chuvi = (dai + rong);
+		double chuvi = (dai + rong)*2;
 		double dientich = dai * rong;
 		double canhnho = Math.min(dai, rong);
 		

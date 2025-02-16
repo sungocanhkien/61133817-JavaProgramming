@@ -15,7 +15,17 @@ public class DTB {
 		Scanner scanner = new Scanner(System.in);
 		//Nhập họ và tên
 		System.out.print("Họ và tên: ");
-		Stri
+		String hoTen = scanner.nextLine();
+		
+		//Nhập điểm trung bình
+		System.out.print("Điểm TB: ");
+		double diemTB = scanner.nextDouble();
+		
+		//Xuất kết quả ra màn hình
+		System.out.printf("%s %f điểm\n", hoTen, diemTB);
+		
+		//Đóng Scanner
+		
 
 	}
 

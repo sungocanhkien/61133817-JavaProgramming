@@ -47,10 +47,10 @@ public class DoiTuong_Oto {
 	@Override
 	public String toString() {
 		return "DoiTuong_Oto ["+ '\n' +
-				" maOto=" + maOto + '\n' +
-				" tenOto=" + tenOto + '\n' +
-				" mauSacOto=" + mauSacOto + '\n' +
-				" namSanXuatOto="+ namSanXuatOto + "]";
+				" Ma Oto=" + maOto + '\n' +
+				" Ten Oto=" + tenOto + '\n' +
+				" Mau sac Oto=" + mauSacOto + '\n' +
+				" Nam San Xuat Oto="+ namSanXuatOto + "]";
 	}
 	
 	

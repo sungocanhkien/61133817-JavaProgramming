@@ -12,6 +12,39 @@ public class DoiTuong_Oto {
 		this.mauSacOto = mauSacOto;
 		this.namSanXuatOto = namSanXuatOto;
 	}
+	//Getter và Setter cho maOto
+	public int getMaOto() {
+		return maOto;
+	}
+	public void setMaOto(int maOto) {
+		this.maOto = maOto;
+	}
+	
+	//Getter và Setter cho tenOto
+	public String getTenOto() {
+		return tenOto;
+	}
+	public void setTenOto(String tenOto) {
+		this.tenOto = tenOto;
+	}
+	
+	//Getter và Setter mauSacOto
+	public String getMauSacOto() {
+		return mauSacOto;
+	}
+	public void setMauSacOto(String mauSacOto) {
+		this.mauSacOto = mauSacOto;
+	}
+	
+	//Getter và Setter cho namSanXuatOto
+	public int getNamSanXuatOto() {
+		return namSanXuatOto;
+	}
+	public void setNamSanXuatOto(int namSanXuatOto) {
+		this.namSanXuatOto = namSanXuatOto;
+	}
+	
+	
 	
 	
 }

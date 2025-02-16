@@ -3,7 +3,7 @@ package vidu_baitap_HuongDoiTuong;
 public class CT {
 
 	public static void main(String[] args) {
-		SanPham sp1 = new SanPham();
+		SanPham sp1 = new SanPham(0, null, null, null);
 		SanPham sp2 = new SanPham(0123, "Áo thun", "Quần áo", null);
 		sp1.setMaSP(12);
 		sp1.setTenSP("Dây Tây");
@@ -15,6 +15,7 @@ public class CT {
 		String thongtinSP2 = "Mã SP2 là" + sp2.getMaSP();
 	    	   thongtinSP2 = "Tên SP2 là" + sp2.getTenSP();
 	    System.out.print(thongtinSP1);
+	    System.out.print(thongtinSP2);
 	    
 
 	}

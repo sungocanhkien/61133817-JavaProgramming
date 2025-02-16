@@ -1,9 +1,21 @@
+import java.util.Scanner;
 
 public class ChuVi_DienTich {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		//Tạo đối tượng Scanner để nhập dữ liệu từ bàn phím
+		Scanner scanner = new Scanner(System.in);
+		//Nhập chiều dài và chiều rộng hình chữ nhật
+		System.out.print("Nhập chiều dài: ");
+		double dai = scanner.nextDouble();
+		System.out.print("Nhập chiều rộng: ");
+		double rong = scanner.nextDouble();
+		
+		//Tính chu vi, diện tích cạnh nhỏ 
+		double chuvi = (dai + rong);
+		double dientich = dai * rong;
+		double canhnho = Math.min(dai, rong);
 	}
 
 }

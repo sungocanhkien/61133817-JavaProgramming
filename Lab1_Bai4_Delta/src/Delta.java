@@ -10,6 +10,14 @@ public class Delta {
 		System.out.print("Nhập hệ số a: ");
 		double a = scanner.nextDouble();
 		
+		System.out.print("Nhập hệ số b: ");
+		double b = scanner.nextDouble();
+		
+		System.out.print("Nhập hệ số c: ");
+		double c = scanner.nextDouble();
+		
+		//Tính
+		
 
 	}
 

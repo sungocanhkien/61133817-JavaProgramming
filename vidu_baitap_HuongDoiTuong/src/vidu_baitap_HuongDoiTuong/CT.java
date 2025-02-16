@@ -14,8 +14,8 @@ public class CT {
 		String thongtinSP1 = sp1.toString();
 		String thongtinSP2 = "Mã SP2 là" + sp2.getMaSP();
 	    	   thongtinSP2 = "Tên SP2 là" + sp2.getTenSP();
-	    System.out.print(thongtinSP1);
-	    System.out.print(thongtinSP2);
+	    System.out.println(thongtinSP1);
+	    System.out.println(thongtinSP2);
 	    
 
 	}

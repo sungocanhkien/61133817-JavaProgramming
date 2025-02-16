@@ -22,6 +22,12 @@ public class Delta {
 		//Tính căn delta
 		double sqrtDelta = Math.sqrt(delta);
 		
+		//Xuất kết quả
+		System.out.println("Delta của phương trình là: " + delta);
+		System.out.println("Căn delta: " + sqrtDelta);
+		
+		//Đóng Scanner
+		scanner.close();
 		
 
 	}

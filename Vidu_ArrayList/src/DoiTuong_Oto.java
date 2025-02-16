@@ -43,6 +43,12 @@ public class DoiTuong_Oto {
 	public void setNamSanXuatOto(int namSanXuatOto) {
 		this.namSanXuatOto = namSanXuatOto;
 	}
+	//Phương thức toString
+	@Override
+	public String toString() {
+		return "DoiTuong_Oto [maOto=" + maOto + ", tenOto=" + tenOto + ", mauSacOto=" + mauSacOto + ", namSanXuatOto="
+				+ namSanXuatOto + "]";
+	}
 	
 	
 	

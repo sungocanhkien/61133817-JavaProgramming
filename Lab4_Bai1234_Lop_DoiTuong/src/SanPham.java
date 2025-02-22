@@ -16,7 +16,10 @@ public class SanPham {
 		System.out.print("Nhập giảm giá: ");
 		giamGia = scanner.nextDouble();
 	}
-	
+	//Phương thức tính thuế nhập khẩu (10% đơn giá)
+	public double getThueNhapKhau() {
+		return donGia*0.1;
+	}
 	
 	
 }

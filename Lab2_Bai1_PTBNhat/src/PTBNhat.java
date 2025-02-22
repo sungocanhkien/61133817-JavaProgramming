@@ -23,6 +23,9 @@ public class PTBNhat {
 				//Trường hợp a = 0 và b != 0, vô nghiệm
 				System.out.prinln("PT vô nghiệm!");
 			}
+		}else {
+			//Trường hợp a != 0, có một nghiệm duy nhất
+			double x = -b/a;
 		}
 	}
 

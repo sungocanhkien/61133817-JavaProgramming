@@ -11,7 +11,10 @@ public class SanPham {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Nhập tên sản phẩm: ");
 		tensp = scanner.nextLine();
-		
+		System.out.print("Nhập đơn giá: ");
+		donGia=scanner.nextDouble();
+		System.out.print("Nhập giảm giá: ");
+		giamGia = scanner.nextDouble();
 	}
 	
 	

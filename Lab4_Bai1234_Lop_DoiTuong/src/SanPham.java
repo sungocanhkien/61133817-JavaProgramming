@@ -24,7 +24,7 @@ public class SanPham {
 		giamGia = scanner.nextDouble();
 	}
 	//Phương thức tính thuế nhập khẩu (10% đơn giá)
-	public double getThueNhapKhau() {
+	private double getThueNhapKhau() {
 		return donGia*0.1;
 	}
 	//Phương thức xuất thông tin sản phẩm

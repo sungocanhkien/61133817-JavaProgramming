@@ -13,6 +13,13 @@ public class SanPham {
 		this.donGia = donGia;
 		this.giamGia = giamGia;
 	}
+	
+	//Hàm tạo 2 tham số không giảm giá
+	public SanPham(String tensp, double donGia) {
+		this(tensp, donGia, 0);
+	}
+
+
 	//Phương thức nhập thông tin sản phẩm
 	public void nhap() {
 		Scanner scanner = new Scanner(System.in);
@@ -22,6 +29,7 @@ public class SanPham {
 		donGia=scanner.nextDouble();
 		System.out.print("Nhập giảm giá: ");
 		giamGia = scanner.nextDouble();
+		scanner.nextLine();
 	}
 	//Phương thức tính thuế nhập khẩu (10% đơn giá)
 	private double getThueNhapKhau() {

@@ -5,7 +5,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		//Tạo 2 đối tượng sản phẩm
 		SanPham sp1 = new SanPham("Nokia", 9000000, 1000000);
-		SanPham sp2 = new SanPham("SamSung", 10000000, 1.500000);
+		SanPham sp2 = new SanPham("SamSung", 9500000, 1500000);
 		
 		
 		//Xuất thông tin từng sản phẩm

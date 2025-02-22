@@ -13,6 +13,12 @@ public class Main {
 		System.out.println("Nhập thông tin sản phẩm 2:");
 		sp2.nhap();
 		
+		//Xuất thông tin từng sản phẩm
+		System.out.println("\n Thông tin sản phẩm 1:");
+		sp1.xuat();
+		System.out.println("\n Thông tin sản phẩm 2:");
+		sp2.xuat();
+		
 		
 	}
 

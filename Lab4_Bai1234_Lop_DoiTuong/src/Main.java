@@ -4,14 +4,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Tạo 2 đối tượng sản phẩm
-		SanPham sp1 = new SanPham();
-		SanPham sp2 = new SanPham();
+		SanPham sp1 = new SanPham("Nokia", 9000000, 1000000);
+		SanPham sp2 = new SanPham("SamSung", 10000000, 1.500000);
 		
-		//Nhập thông tin cho từng sản phẩm
-		System.out.println("Nhập thông tin sản phẩm 1:");
-		sp1.nhap();
-		System.out.println("Nhập thông tin sản phẩm 2:");
-		sp2.nhap();
 		
 		//Xuất thông tin từng sản phẩm
 		System.out.println("\n Thông tin sản phẩm 1:");

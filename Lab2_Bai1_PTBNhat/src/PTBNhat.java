@@ -26,7 +26,7 @@ public class PTBNhat {
 		}else {
 			//Trường hợp a != 0, có một nghiệm duy nhất
 			double x = -b/a;
-			System.out.printf("PT có nghiệm x = %.f\n", x);
+			System.out.printf("PT có nghiệm x = %f\n", x);
 		}
 		//Đóng scanner
 		scanner.close();

@@ -21,12 +21,15 @@ public class PTBNhat {
 				System.out.println("PT vô số nghiệm!");
 			} else {
 				//Trường hợp a = 0 và b != 0, vô nghiệm
-				System.out.prinln("PT vô nghiệm!");
+				System.out.printf("PT vô nghiệm!");
 			}
 		}else {
 			//Trường hợp a != 0, có một nghiệm duy nhất
 			double x = -b/a;
+			System.out.printf("PT có nghiệm x = %.f\n", x);
 		}
+		//Đóng scanner
+		scanner.close();
 	}
 
 }

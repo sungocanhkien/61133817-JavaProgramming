@@ -20,6 +20,14 @@ public class SanPham {
 	public double getThueNhapKhau() {
 		return donGia*0.1;
 	}
+	//Phương thức xuất thông tin sản phẩm
+	public void xuat() {
+		System.out.println("\n Thông tin sản phẩm:");
+		System.out.println("Tên sản phẩm: " + tensp);
+		System.out.println("Đơn giá: " + donGia);
+		System.out.println("Giảm giá: " + giamGia);
+		System.out.println("Thuế nhập khẩu: " + getThueNhapKhau());
+	}
 	
 	
 }

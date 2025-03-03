@@ -5,6 +5,7 @@ Lưu các bài thực hành
 <h2 align="left">BÀI TẬP THỰC HÀNH</h2>
 <div>
   <h4>EX1: <a href = "https://github.com/sungocanhkien/61133817-JavaProgramming/tree/main/HelloWorld">HelloWorld</a>/a></h4>
+  <img src = "https://github.com/sungocanhkien/61133817-JavaProgramming/blob/main/HelloWorld/Result_Hello.PNG" width = "200">
 </div>
 <div>
   <h4>EX1: <a href = "https://github.com/sungocanhkien/61133817-JavaProgramming/tree/main/Lab1_Bai1_DTB">Lab1_Bai1_DTB</a>/a></h4>

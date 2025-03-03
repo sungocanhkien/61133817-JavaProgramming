@@ -43,3 +43,8 @@ Lưu các bài thực hành
   <h5 align="left">Kết quả chương trình</h5>
   <img src = "https://github.com/sungocanhkien/61133817-JavaProgramming/blob/main/Vidu_ArrayList/Result_Arraylist.PNG" width = "200">
 </div>
+<div>
+  <h4>vidu_baitap_HuongDoiTuong: <a href = "https://github.com/sungocanhkien/61133817-JavaProgramming/tree/main/vidu_baitap_HuongDoiTuong">vidu_baitap_HuongDoiTuong</a>/a></h4>
+  <h5 align="left">Kết quả chương trình</h5>
+  <img src = "https://github.com/sungocanhkien/61133817-JavaProgramming/blob/main/vidu_baitap_HuongDoiTuong/Result_HuongDoiTuong.PNG" width = "200">
+</div>
